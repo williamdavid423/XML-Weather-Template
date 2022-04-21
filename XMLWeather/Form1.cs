@@ -63,6 +63,11 @@ namespace XMLWeather
 
             reader.ReadToFollowing("temperature");
             days[0].currentTemp = reader.GetAttribute("value");
+            days[0].tempLow = reader.GetAttribute("min");
+            days[0].tempHigh = reader.GetAttribute("max");
+
+            reader.ReadToFollowing("feels_like");
+            days[0].feels = reader.GetAttribute("value");
 
         }
 
