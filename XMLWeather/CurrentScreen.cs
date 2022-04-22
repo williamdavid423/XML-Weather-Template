@@ -21,7 +21,9 @@ namespace XMLWeather
         {
             cityOutput.Text = Form1.days[0].location;
             tempLabel.Text = Form1.days[0].currentTemp;
-          
+            minMaxFeelLabel.Text = $"{Form1.days[0].tempLow}/{Form1.days[0].tempHigh} feels like {Form1.days[0].feels}";
+            dateLabel.Text = Form1.days[0].date;
+
         }
 
         private void forecastLabel_Click(object sender, EventArgs e)

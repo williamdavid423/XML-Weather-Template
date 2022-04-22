@@ -11,8 +11,12 @@ using System.Xml;
 
 namespace XMLWeather
 {
+    
     public partial class Form1 : Form
     {
+        double feels = 0; 
+
+
         // TODO: create list to hold day objects
        public static List<Day> days = new List<Day>();
 
@@ -43,12 +47,15 @@ namespace XMLWeather
 
                 reader.ReadToFollowing("temperature");
                 newDay.tempLow = reader.GetAttribute("min");
+                newDay.tempHigh = reader.GetAttribute("max");
 
                 //TODO: if day object not null add to the days list
                 if (newDay.date != null)
                 {
                     days.Add(newDay);
                 }
+
+                
             }
         }
 
@@ -63,12 +70,14 @@ namespace XMLWeather
 
             reader.ReadToFollowing("temperature");
             days[0].currentTemp = reader.GetAttribute("value");
-            days[0].tempLow = reader.GetAttribute("min");
-            days[0].tempHigh = reader.GetAttribute("max");
+            //days[0].tempLow = reader.GetAttribute("min");
+           
 
             reader.ReadToFollowing("feels_like");
             days[0].feels = reader.GetAttribute("value");
 
+            feels = days[0].feels
+            
         }
 
 

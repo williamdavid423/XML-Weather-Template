@@ -108,7 +108,7 @@
             // 
             this.minMaxFeelLabel.BackColor = System.Drawing.Color.Transparent;
             this.minMaxFeelLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.minMaxFeelLabel.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minMaxFeelLabel.Font = new System.Drawing.Font("Verdana", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minMaxFeelLabel.ForeColor = System.Drawing.Color.White;
             this.minMaxFeelLabel.Location = new System.Drawing.Point(26, 187);
             this.minMaxFeelLabel.Name = "minMaxFeelLabel";
@@ -120,7 +120,7 @@
             // 
             this.dateLabel.BackColor = System.Drawing.Color.Transparent;
             this.dateLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dateLabel.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateLabel.Font = new System.Drawing.Font("Verdana", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateLabel.ForeColor = System.Drawing.Color.White;
             this.dateLabel.Location = new System.Drawing.Point(26, 201);
             this.dateLabel.Name = "dateLabel";
