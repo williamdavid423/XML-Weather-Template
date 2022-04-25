@@ -49,6 +49,9 @@ namespace XMLWeather
                 newDay.tempLow = reader.GetAttribute("min");
                 newDay.tempHigh = reader.GetAttribute("max");
 
+                reader.ReadToFollowing("symbol");
+                newDay.icon = reader.GetAttribute("number");
+
                 //TODO: if day object not null add to the days list
                 if (newDay.date != null)
                 {
@@ -76,7 +79,7 @@ namespace XMLWeather
             reader.ReadToFollowing("feels_like");
             days[0].feels = reader.GetAttribute("value");
 
-            feels = days[0].feels
+          
             
         }
 

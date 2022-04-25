@@ -44,5 +44,10 @@ namespace XMLWeather
         {
 
         }
+
+        private void cityOutput_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

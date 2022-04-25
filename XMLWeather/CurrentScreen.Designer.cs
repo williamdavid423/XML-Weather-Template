@@ -49,6 +49,7 @@
             this.cityOutput.Size = new System.Drawing.Size(132, 23);
             this.cityOutput.TabIndex = 22;
             this.cityOutput.Text = "Stratford";
+            this.cityOutput.Click += new System.EventHandler(this.cityOutput_Click);
             // 
             // currentOutput
             // 
