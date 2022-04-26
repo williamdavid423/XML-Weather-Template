@@ -36,6 +36,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.minMaxFeelLabel = new System.Windows.Forms.Label();
             this.dateLabel = new System.Windows.Forms.Label();
+            this.conditionImageBox = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.conditionImageBox)).BeginInit();
             this.SuspendLayout();
             // 
             // cityOutput
@@ -129,11 +131,21 @@
             this.dateLabel.TabIndex = 44;
             this.dateLabel.Text = "Stratford";
             // 
+            // conditionImageBox
+            // 
+            this.conditionImageBox.Location = new System.Drawing.Point(146, 81);
+            this.conditionImageBox.Name = "conditionImageBox";
+            this.conditionImageBox.Size = new System.Drawing.Size(73, 68);
+            this.conditionImageBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.conditionImageBox.TabIndex = 45;
+            this.conditionImageBox.TabStop = false;
+            // 
             // CurrentScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aqua;
+            this.Controls.Add(this.conditionImageBox);
             this.Controls.Add(this.dateLabel);
             this.Controls.Add(this.minMaxFeelLabel);
             this.Controls.Add(this.forecastLabel);
@@ -145,6 +157,7 @@
             this.Name = "CurrentScreen";
             this.Size = new System.Drawing.Size(250, 400);
             this.Load += new System.EventHandler(this.CurrentScreen_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.conditionImageBox)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -158,5 +171,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label minMaxFeelLabel;
         private System.Windows.Forms.Label dateLabel;
+        private System.Windows.Forms.PictureBox conditionImageBox;
     }
 }
