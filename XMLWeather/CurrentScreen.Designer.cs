@@ -37,6 +37,7 @@
             this.minMaxFeelLabel = new System.Windows.Forms.Label();
             this.dateLabel = new System.Windows.Forms.Label();
             this.conditionImageBox = new System.Windows.Forms.PictureBox();
+            this.windLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.conditionImageBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -100,18 +101,18 @@
             // 
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(19, 25);
+            this.label5.Location = new System.Drawing.Point(3, 25);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(115, 27);
             this.label5.TabIndex = 42;
-            this.label5.Text = "____________________________";
+            this.label5.Text = "__________________________";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // minMaxFeelLabel
             // 
             this.minMaxFeelLabel.BackColor = System.Drawing.Color.Transparent;
             this.minMaxFeelLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.minMaxFeelLabel.Font = new System.Drawing.Font("Verdana", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minMaxFeelLabel.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minMaxFeelLabel.ForeColor = System.Drawing.Color.White;
             this.minMaxFeelLabel.Location = new System.Drawing.Point(26, 187);
             this.minMaxFeelLabel.Name = "minMaxFeelLabel";
@@ -123,7 +124,7 @@
             // 
             this.dateLabel.BackColor = System.Drawing.Color.Transparent;
             this.dateLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dateLabel.Font = new System.Drawing.Font("Verdana", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateLabel.Font = new System.Drawing.Font("Verdana", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateLabel.ForeColor = System.Drawing.Color.White;
             this.dateLabel.Location = new System.Drawing.Point(26, 201);
             this.dateLabel.Name = "dateLabel";
@@ -140,11 +141,25 @@
             this.conditionImageBox.TabIndex = 45;
             this.conditionImageBox.TabStop = false;
             // 
+            // windLabel
+            // 
+            this.windLabel.BackColor = System.Drawing.Color.Transparent;
+            this.windLabel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.windLabel.Font = new System.Drawing.Font("Verdana", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.windLabel.ForeColor = System.Drawing.Color.White;
+            this.windLabel.Location = new System.Drawing.Point(20, 231);
+            this.windLabel.Name = "windLabel";
+            this.windLabel.Size = new System.Drawing.Size(213, 71);
+            this.windLabel.TabIndex = 46;
+            this.windLabel.Text = "Stratford";
+            this.windLabel.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
             // CurrentScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Aqua;
+            this.Controls.Add(this.windLabel);
             this.Controls.Add(this.conditionImageBox);
             this.Controls.Add(this.dateLabel);
             this.Controls.Add(this.minMaxFeelLabel);
@@ -172,5 +187,6 @@
         private System.Windows.Forms.Label minMaxFeelLabel;
         private System.Windows.Forms.Label dateLabel;
         private System.Windows.Forms.PictureBox conditionImageBox;
+        private System.Windows.Forms.Label windLabel;
     }
 }

@@ -26,6 +26,8 @@ namespace XMLWeather
             tempLabel.Text = Form1.days[0].currentTemp;
             minMaxFeelLabel.Text = $"{Form1.days[0].tempLow}/{Form1.days[0].tempHigh} feels like {Form1.days[0].feels}";
             dateLabel.Text = Form1.days[0].date;
+            windLabel.Text = $"{Form1.days[0].speed}m/s wind speeds \n{ Form1.days[0].wind}";
+
             if (weatherIcon > 300 && weatherIcon < 321)
             {
                 conditionImageBox.Image = Properties.Resources.wpjs;

@@ -14,7 +14,7 @@ namespace XMLWeather
     
     public partial class Form1 : Form
     {
-        double feels = 0; 
+   
 
 
         // TODO: create list to hold day objects
@@ -45,12 +45,14 @@ namespace XMLWeather
                 reader.ReadToFollowing("time");
                 newDay.date = reader.GetAttribute("day");
 
+                reader.ReadToFollowing("symbol");
+                newDay.icon = reader.GetAttribute("number");
+
                 reader.ReadToFollowing("temperature");
                 newDay.tempLow = reader.GetAttribute("min");
                 newDay.tempHigh = reader.GetAttribute("max");
 
-                reader.ReadToFollowing("symbol");
-                newDay.icon = reader.GetAttribute("number");
+
 
                 //TODO: if day object not null add to the days list
                 if (newDay.date != null)
@@ -58,7 +60,7 @@ namespace XMLWeather
                     days.Add(newDay);
                 }
 
-                
+
             }
         }
 
@@ -79,8 +81,12 @@ namespace XMLWeather
             reader.ReadToFollowing("feels_like");
             days[0].feels = reader.GetAttribute("value");
 
-          
-            
+            reader.ReadToFollowing("speed");
+            days[0].speed = reader.GetAttribute("value");
+            days[0].wind = reader.GetAttribute("name");
+
+
+
         }
 
 
