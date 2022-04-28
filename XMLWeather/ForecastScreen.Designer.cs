@@ -324,7 +324,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Aqua;
+            this.BackColor = System.Drawing.Color.MediumTurquoise;
             this.Controls.Add(this.sunMax);
             this.Controls.Add(this.sunMin);
             this.Controls.Add(this.sunDate);
